@@ -1,0 +1,13 @@
+public class AccessModifier2 extends AccessModifier1 {
+
+    // Cannot access private members of AccessModifier1
+    @Override
+    public void display() {
+        // System.out.println(pvt); // ❌ not visible
+        System.out.println(df);
+        System.out.println(pro);
+        System.out.println(pbl);
+    }
+}
+
+
